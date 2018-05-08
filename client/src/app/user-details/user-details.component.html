@@ -1,0 +1,17 @@
+<div align="center">
+  <div>
+    <h2 style="color: #6495ed">{{title}}</h2>
+  </div>
+  <div *ngIf="flag">
+    <table>
+      <tr>
+        <td>{{user.id}}</td>
+        <td style="border-bottom: 1px solid black"><strong>{{user.name}}</strong></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="border-bottom: 1px solid black">{{user.email}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

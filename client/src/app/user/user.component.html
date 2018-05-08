@@ -1,0 +1,22 @@
+<div>
+  <h2>User Details</h2>
+  <table>
+    <thead>
+    <tr>
+      <th style="display:none">Id</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td style="display:none">{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td><input type="button" (click)="getDetails(user)" value="Details"/> </td>
+      <td><input type="button" (click)="delete(user)" value="Delete"/> </td>
+      <td><input type="button" (click)="edit(user)" value="Edit"/> </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

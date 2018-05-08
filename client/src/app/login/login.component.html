@@ -1,0 +1,24 @@
+
+<div align="center">
+  <form>
+    <table>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" [(ngModel)] = "email" placeholder="Email" name="email" required="required"/> </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" [(ngModel)] = "password" placeholder="Password" name="password" required="required"/> </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="button" (click)="login()" value="Login">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <div><a routerLink="/new-user">New User</a></div>
+</div>

@@ -1,0 +1,5 @@
+<div align="center"><h1>{{title}}</h1></div>
+
+<router-outlet>
+  <div *ngIf="tokenValid" style="float: right"><input type="button" (click)="logout()" value="Logout"/> </div>
+</router-outlet>
